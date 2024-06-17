@@ -1,0 +1,49 @@
+*{ box-sizing: border-box;}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight'; }
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.carousel-btn {
+    width: 4%;
+    background: pink;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-status {
+    margin: 0 20px;
+}
+
+.cards-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 33%;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
